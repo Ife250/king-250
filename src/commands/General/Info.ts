@@ -34,9 +34,9 @@ export default class Command extends BaseCommand {
     };
     const uptime = () => formatTime(process.uptime());
     await M.reply(
-      `*━━━❰ Katsushika🚀 ❱━━━*\n\n 📮 *Groups: ${
+      `*━━━❰ Kingsley 🚀 ❱━━━*\n\n 🔥 *legends 😌Groups: ${
         chats.length
-      }*\n\n🟩 *Users: ${users}*\n\n🚦 *Uptime: ${uptime()}*\n\n🌋 *Company: Sapphire🈲*`
+      }*\n\n💫 *My best amigos😎: ${users}*\n\n🌌 *Uptime🥱: ${uptime()}*\n\n🌋 *Company: happy yours & juice official*`
     );
   };
 }
