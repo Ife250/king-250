@@ -9,7 +9,7 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "issa",
+			command: "issa","kings,
 			description: "Displays the info",
 			category: "general",
 			usage: `${client.config.prefix}issa`,
@@ -27,26 +27,26 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.jpeg,
-				caption: `Hey pal!🍃I'm Issa, a learner/student & an upcoming developer in the future.
+				caption: `Hey pal!🍃I'm kingsley, a learner/student & an upcoming developer in the future.
             
 📫𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥;
-Wa.me/254115175696
-Wa.me/16156236963
+Wa.me/265889976968
+Wa.me/265981678617
 
 ⭕𝙂𝙞𝙩𝙝𝙪𝙗;
-https://github.com/Issa2001
+https://github.com/ife250
 
 📮𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢;
-https://instagram.com/__.i.s.s.a.__
+https://instagram.com/ifekingsley_
 
 🕸𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢;
-t.me/Issa2001
+t.me/kingsleypro
 
 🟦𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠;
-https://www.facebook.com/profile.php?id=100037298193290
+https://www.facebook.com/ifekingsley.kingsleychimalizeni
 
 🚀𝘿𝙞𝙨𝙘𝙤𝙧𝙙;
-｟𝖢𝗈𝗆𝗂𝗇𝗀 𝖲𝗈𝗈𝗇｠
+https://www.discord.com/kingsley#6886
 
 ⪼𝖲𝖾𝖾 𝗒𝖺𝗁 💘`,
 			}
