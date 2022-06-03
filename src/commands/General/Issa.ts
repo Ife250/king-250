@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const becky =
-			"https://www.linkpicture.com/q/Issa-logo.jpg";
+			"https://telegra.ph/file/3dc8ead2776d65a3b0d02.jpg";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: becky },
