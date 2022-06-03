@@ -9,7 +9,7 @@ import axios from "axios";
 export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
-      command: "chat","kingsley",
+      command: "chat",
       description: "Chat with the kingsley Bot in group",
       aliases: ["bot","kingsley"],
       category: "fun",
