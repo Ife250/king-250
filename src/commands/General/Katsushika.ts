@@ -9,7 +9,7 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "Katsushika",
+			command: "Katsushika","kingsleybot","kingsley bot",
 			description: "Displays the info of Katsushika bot",
 			category: "general",
 			usage: `${client.config.prefix}asuna`,
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const becky =
-			"https://www.linkpicture.com/q/Katsushika_1.jpeg";
+			"https://telegra.ph/file/3dc8ead2776d65a3b0d02.jpg";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: becky },
@@ -27,12 +27,12 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.jpeg,
-				caption: `*Katsushika🚀*
+				caption: `*Kingsley 🚀*
 
-⚜𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: A reversed version of Asuna bot. 
+⚜𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: A reversed version of Asuna,future,juice,katsushika bot. 
 
-🚥𝗦𝘁𝗮𝘁𝘂𝘀: Katsushika is an open source project, therefore you can deploy it here;
-https://github.com/Issa2001/Katsushika
+🚥𝗦𝘁𝗮𝘁𝘂𝘀: Kingsley is an open source project, therefore you can deploy it here;
+https://github.com/ife250/king-250
 
 📑𝗟𝗶𝗰𝗲𝗻𝘀𝗲: You may obtain a copy of the License at;
 http://www.gnu.org/licenses/
