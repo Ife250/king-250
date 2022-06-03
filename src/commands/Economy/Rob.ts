@@ -18,14 +18,14 @@ export default class Command extends BaseCommand {
   }
 
   run = async (M: ISimplifiedMessage): Promise<void> => {
-    if (M.from === "120363022488307199@g.us")
+    if (M.from === "120363042459755093@g.us")
       return void M.reply(`You can't rob someone here. Go somewhere else`);
     const time = 900000;
     const cd = await (await this.client.getUser(M.sender.jid)).lastRob;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
-        `You can rob again after ${timeLeft.minutes} minute(s), *${timeLeft.seconds} second(s)*. Give it a break.`
+        `You can rob again after ${timeLeft.minutes} minute(s), *${timeLeft.seconds} second(s)*. Give it a break u where never the best lmao.`
       );
     }
     const user = M.sender.jid;
@@ -51,7 +51,7 @@ export default class Command extends BaseCommand {
     const wallet2 = await (await this.client.getUser(target!)).wallet;
     if (wallet1 < 250)
       return void M.reply(
-        `🟥 *You need at least 250 gold in your wallet to rob someone.*`
+        `🟥 *You need at least 250 gold in your broke wallet to rob someone loser.*`
       );
     if (wallet2 < 250)
       return void M.reply(`Please leave this poor person alone.`);
@@ -65,7 +65,7 @@ export default class Command extends BaseCommand {
       await this.client.reduceGold(user, gold);
       await this.client.addGold(target!, gold);
       return void M.reply(
-        `🟥 *You got caught and paid ${gold} gold to @${
+        `🟥 *motherfucker just got caught and paid ${gold} gold to @${
           target?.split("@")[0]
         }*`,
         MessageType.text,
@@ -77,9 +77,9 @@ export default class Command extends BaseCommand {
       await this.client.addGold(user, gold);
       await this.client.reduceGold(target!, gold);
       return void M.reply(
-        `You robbed *@${
+        `Ha motherfucker just robbed *@${
           target?.split("@")[0]
-        }* and got away with *${gold} gold!*`,
+        }* and got away with *${gold} gold that's one hell of a rob!*`,
         MessageType.text,
         undefined,
         [target || "", M.sender.jid]
