@@ -9,8 +9,8 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "Katsushika","kingsleybot","kingsley bot",
-			description: "Displays the info of Katsushika bot",
+			command: "kingsley",
+			description: "Displays the info of kingsley bot",
 			category: "general",
 			usage: `${client.config.prefix}asuna`,
 			baseXp: 200,
