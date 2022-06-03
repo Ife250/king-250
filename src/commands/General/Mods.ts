@@ -10,21 +10,21 @@ export default class Command extends BaseCommand {
             description: "Displays the Moderators' contact info",
             category: 'general',
             usage: `${client.config.prefix}mods`,
-            aliases: ['moderators', 'dev', 'mod', 'owner']
+            aliases: ['moderators', 'dev', 'mod', 'owner', 'legends']
         })
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         if (!this.client.config.mods || !this.client.config.mods[0]) return void M.reply('*[UNMODERATED]*')
         const filteredMap = this.client.config.mods.map((mod) => this.client.getContact(mod)).filter((user) => user)
-        let text = '*🧧KATSUSHIKA MODS🧧*\n\n';
+        let text = '*🧧KINGSLEY LEGENDS🧧*\n\n';
         filteredMap.forEach(
             (user, index) =>
-                (text += `#${index + 1}\n🎫 *Username: ${
+                (text += `#${index + 1}\n😎 *Username: ${
                     user.notify || user.vname || user.name || 'null'
-                }*\n📮 *Contact: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`) 
+                }*\n💫 *Contact: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`) 
         )
-        text += `\n© 𝖠𝗌𝗎𝗇𝖺 2022`
+        text += `\n© Kingsley 2022`
         return void M.reply(text)
     }
 }
