@@ -9,7 +9,7 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
-      command: "hi",
+      command: "hi","king",
       description: "Generally used to check if bot is Up",
       category: "general",
       dm: true,
@@ -28,8 +28,8 @@ export default class Command extends BaseCommand {
     ];
 
     const buttonMessage: any = {
-      contentText: `Hello *${M.sender.username}👋*, I'm present! How may I help you? `,
-      footerText: "© Katsushika",
+      contentText: `Hello *${M.sender.username}👋*, I'm present! ＼(^o^)／ How may The legendary Kíñgsléy help you? `,
+      footerText: "© Kingsley",
       buttons: buttons,
       headerType: 1,
     };
