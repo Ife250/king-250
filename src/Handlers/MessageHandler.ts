@@ -149,27 +149,27 @@ export default class MessageHandler {
         `Did you mean *${this.client.config.prefix}help*?`
       );
     const user = await this.client.getUser(M.sender.jid);
-    if (user.ban) return void M.reply("🟥 You're Banned from using commands.");
+    if (user.ban) return void M.reply("🟥 You're Banned from using the legendary Kíñgsléy.");
     const state = await this.client.DB.disabledcommands.findOne({
       command: command.config.command,
     });
     if (state)
       return void M.reply(
-        `✖ This command is disabled by *İşşa.*${
+        `✖ This command is disabled by *Kíñgsléy.*${
           state.reason ? ` for ${state.reason}` : ""
         }`
       );
     if (!command.config?.dm && M.chat === "dm")
-      return void M.reply("This command can ONLY be used in groups!");
+      return void M.reply("This command can ONLY be used in groups lmao!");
     if (
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`Only *İşşa* & his MODS are allowed to use this command.`);
+      return void M.reply(`Only *Kíñgsléy* & his MODS aka legends are allowed to use this command.`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
-        `This command is only meant for the group admins, Baka!`
+        `This command is only meant for the group pros, loser!`
       );
     try {
       await command.run(M, this.parseArgs(args));
@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🏮 *Name: ${chara.name}*\n\n📑 *About:* ${chara.about}\n\n🌐 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "© Katsushika",
+        footerText: "© kingsley",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `KATSUSHIKA RECONNECTED🚀`;
+    const text = `KINGSLEY RECONNECTED🚀`;
     await this.client.sendMessage(
       "120363040300072277@g.us",
       text,
@@ -313,7 +313,7 @@ export default class MessageHandler {
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `KATSUSHIKA RECONNECTED🚀`;
+    const text = `KINGSLEY RECONNECTED🚀`;
     await this.client.sendMessage(
       "120363040300072277@g.us",
       text,
