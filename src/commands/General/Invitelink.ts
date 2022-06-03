@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
 
-            return void M.reply(`I'm not an admin of this group.`)
+            return void M.reply(`I'm not a pro of this group.`)
 
         if ((await this.client.getGroupData(M.from)).invitelink) {
 
@@ -56,13 +56,13 @@ export default class Command extends BaseCommand {
 
             )
 
-            return void M.reply('📪Sent you the Group Link in personal message.')
+            return void M.reply('📪Sent you the Group Link in private 👌🙂🍷.')
 
         } else {
 
             return void M.reply(
 
-                `Command not enabled by the admin.\nUse *${this.client.config.prefix}act invitelink* to enable it`
+                `Command not enabled by the pro.\nUse *${this.client.config.prefix}act invitelink* to enable it`
 
             )
 
