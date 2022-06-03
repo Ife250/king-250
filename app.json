@@ -3,8 +3,8 @@
   "name": "Katsushika",
 
   "description": "A reversed version of AsunaBotto",
-  
-  "logo": https://telegra.ph/file/3dc8ead2776d65a3b0d02.jpg
+
+
 
   "keywords": [
 
@@ -26,9 +26,9 @@
 
   ],
 
-  "website": "https://github.com/Issa2001/Katsushika#readme",
+  "website": "https://github.com/ife250/king-250#readme",
 
-  "repository": "https://github.com/Issa2001/Katsushika.git",
+  "repository": "https://github.com/ife250/king-250.git",
 
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8rFLDQjMqZvuSZlisVVN4FecG5ftEFH541dIMwn9gySlStL2QF2J48ew&s=10",
 
@@ -36,7 +36,7 @@
 
   "env": {
 
-      "PREFIX": {-
+      "PREFIX": {
 
           "description": "Prefix of your bot"
 
@@ -48,7 +48,7 @@
 
       },
 
-      "MODS": {265889976968,265981678617
+      "MODS": {265889976968,265981678617,265994894966,263715183177
 
           "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
 
@@ -70,7 +70,7 @@
 
       },
 
-      "GOOGLE_API_KEY": {AIzaSyB3RIdsUqme9ulkoK90GzxWBUh3BlZwK-I
+      "GOOGLE_API_KEY": {
 
           "description": "Google API key for Google searches (Not Required)",
 
@@ -78,7 +78,7 @@
 
       },
 
-      "CHAT_BOT_URL": {http://api.brainshop.ai/get?bid=164443&key=xNWQP58HLiDaWYk2&uid=[uid]&msg=[msg]
+      "CHAT_BOT_URL": {
 
           "description": "BrainShop API Brain url",
 
@@ -94,7 +94,7 @@
 
       },
 
-      "GENIUS_KEY": {2TLmv7clE1-5pVt0r0a5bK4DrFLkF1vp6Wvi41tLngw8ZXZ2pT2BSd6Mt3IrBTkO
+      "GENIUS_KEY": {
 
           "description": "Your access token of genius.com to fetch the lyrics",
 
