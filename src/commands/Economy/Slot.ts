@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
-    if (M.from !== "120363040442532842@g.us")
+    if (M.from !== "120363041313611102@g.us")
       return void M.reply(
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
@@ -35,21 +35,21 @@ export default class Command extends BaseCommand {
       );
     }
     const emojis = [
-      "\t\t🌸 : 💮 : 🌸\n》 💮 : ☘ : 💮 《\n\t\t☘ : ☘ : 🌸",
-      "\t\t☘ : ☘ : 🌸\n》 💮 : ☘ : 🌸 《\n\t\t🌸 : 💮 : 💮",
-      "\t\t🌸 : 🌸 : ☘\n》 💮 : ☘ : ☘ 《\n\t\t💮 : 💮 : 🌸",
+      "\t\t😎 : 😝 : 😎\n》 😝 : ☠️ : 😝 《\n\t\t☠️ : ☠️ : 😎",
+      "\t\t☠️ : ☠️ : 😎\n》 😝 : ☠️ : 😎 《\n\t\t😎 : 😝 : 😝",
+      "\t\t😎 : 😎 : ☠️\n》 😝 : ☠️ : ☠️ 《\n\t\t😝 : 😝 : 😎",
     ];
     const i = emojis[Math.floor(Math.random() * emojis.length)];
     const Emoji = [
-      "\t\t🌸 : 💮 : 💮\n》 ☘ : ☘ : ☘ 《\n\t\t☘ : 🌸 : 🌸",
-      "\t\t☘ : 🌸 : ☘\n》 💮 : 💮 : 💮 《\n\t\t☘ : 🌸 : 🌸",
-      "\t\t💮 : ☘ : 💮\n》 🌸 : 🌸 : 🌸 《\n\t\t💮 : ☘ : ☘",
+      "\t\t😎 : 😝 : 😝\n》 ☠️ : ☠️ : ☠️ 《\n\t\t☠️ : 😎 : 😎",
+      "\t\t☠️ : 😎 : ☠️\n》 😝 : 😝 : 😝 《\n\t\t☠️ : 😎 : 😎",
+      "\t\t😝 : ☠️ : 😝\n》 😎 : 😎 : 😎 《\n\t\t😝 : ☠️ : ☠️",
     ];
     const o = Emoji[Math.floor(Math.random() * Emoji.length)];
     const jack = [
-      "\t\t🌸 : 🌸 : 🌸\n》 ☘ : ☘ : ☘ 《\n\t\t💮 : 💮 : 💮",
-      "\t\t☘ : ☘ : ☘\n》 💮 : 💮 : 💮 《\n\t\t🌸 : 🌸 : 🌸",
-      "\t\t💮 : 💮 : 💮\n》 🌸 : 🌸 : 🌸 《\n\t\t☘ : ☘ : ☘",
+      "\t\t😎 : 😎 : 😎\n》 ☠️ : ☠️ : ☠️ 《\n\t\t😝 : 😝 : 😝",
+      "\t\t☠️ : ☠️ : ☠️\n》 😝 : 😝 : 😝 《\n\t\t😎 : 😎 : 😎",
+      "\t\t😝 : 😝 : 😝\n》 😎 : 😎 : 😎 《\n\t\t☠️ : ☠️ : ☠️",
     ];
     const p = jack[Math.floor(Math.random() * jack.length)];
     const results = [
@@ -104,7 +104,7 @@ export default class Command extends BaseCommand {
       const text = `${head}\n\n${i}\n\n📉 You lost *${amount} gold*.`;
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "© Katsushika",
+        footerText: "© Kingsley",
         buttons: buttons,
         headerType: 1,
       };
@@ -121,7 +121,7 @@ export default class Command extends BaseCommand {
       const text = `${head}\n\n${o}\n\n📈 You won *${gold} gold*.`;
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "© Katsushika",
+        footerText: "© Kingsley",
         buttons: buttons,
         headerType: 1,
       };
@@ -137,7 +137,7 @@ export default class Command extends BaseCommand {
       const text = `${head}\n\n${p}\n\n🎊 *Jackpot!* You won *${gold} gold*.`;
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "© Katsushika",
+        footerText: "© kingsley",
         buttons: buttons,
         headerType: 1,
       };
