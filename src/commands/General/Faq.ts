@@ -29,12 +29,12 @@ export default class Command extends BaseCommand {
     const buttonMessage: any = {
       contentText: `*━━━❰ FAQ ❱━━━*
 
-📮 *Q1:* How do I add Katsushika bot in my group?
-📑 *A:* Send the group link in the bot's or owner's DM & it will join soon.
+📮 *Q1:* How do I add Kingsley bot in my group?
+📑 *A:* Send the group link in the owner's DM or legends & it will join soon.
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q2:* What are the requirements for the bot to join a group?
-📑 *A:* First the group must have atleast 50 members for the bot to join & the group must be active & also be a non-hentai/porn group.
+📑 *A:* First the group must have atleast 50 members for the bot to join & the group must be active & also be a hentai/porn group your choice.
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q3:* How do I earn XP in the group?
@@ -61,15 +61,15 @@ export default class Command extends BaseCommand {
 📑 *A:* There are 3 main reasons for that, either the bot is lagging due to data traffic, inactive or the bot has been banned.
 ᚖ ────── ✪ ────── ᚖ
 
-📮 *Q9:* How can I create a bot like Katsushika?
-📑 *A:* Deploy your own Katsushika bot here;
-https://github.com/Issa2001/Katsushika 
+📮 *Q9:* How can I create a bot like kingsley?
+📑 *A:* Deploy your own Kingsley bot here;
+https://github.com/ife250/king-250
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q10:* Is the project or the *Sapphire🈲* group sponsored?
 📑 *A:* Of course not, we're not sponsored either way but it could be your own pleasure to do that thus this is a non-profit organization.
 ᚖ ────── ✪ ────── ᚖ`,
-      footerText: "© Katsushika",
+      footerText: "© Kingsley",
       buttons: buttons,
       headerType: 1,
     };
