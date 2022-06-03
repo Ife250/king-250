@@ -3,6 +3,8 @@
   "name": "Katsushika",
 
   "description": "A reversed version of AsunaBotto",
+  
+  "logo": https://telegra.ph/file/3dc8ead2776d65a3b0d02.jpg
 
   "keywords": [
 
@@ -34,7 +36,7 @@
 
   "env": {
 
-      "PREFIX": {
+      "PREFIX": {-
 
           "description": "Prefix of your bot"
 
@@ -46,7 +48,7 @@
 
       },
 
-      "MODS": {
+      "MODS": {265889976968,265981678617
 
           "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
 
@@ -68,7 +70,7 @@
 
       },
 
-      "GOOGLE_API_KEY": {
+      "GOOGLE_API_KEY": {AIzaSyB3RIdsUqme9ulkoK90GzxWBUh3BlZwK-I
 
           "description": "Google API key for Google searches (Not Required)",
 
@@ -76,7 +78,7 @@
 
       },
 
-      "CHAT_BOT_URL": {
+      "CHAT_BOT_URL": {http://api.brainshop.ai/get?bid=164443&key=xNWQP58HLiDaWYk2&uid=[uid]&msg=[msg]
 
           "description": "BrainShop API Brain url",
 
@@ -84,7 +86,7 @@
 
       },
 
-      "TENOR_API_KEY": {
+      "TENOR_API_KEY": {N5T9SLZFXL5K
 
           "description": "A key used for gif searches",
 
@@ -92,7 +94,7 @@
 
       },
 
-      "GENIUS_KEY": {
+      "GENIUS_KEY": {2TLmv7clE1-5pVt0r0a5bK4DrFLkF1vp6Wvi41tLngw8ZXZ2pT2BSd6Mt3IrBTkO
 
           "description": "Your access token of genius.com to fetch the lyrics",
 
