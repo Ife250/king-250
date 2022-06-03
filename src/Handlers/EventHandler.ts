@@ -27,7 +27,7 @@ export default class EventHandler {
           { $set: { bot: this.client.user.name } }
         );
       }
-      const text = `Thanks for adding me in your group. Please tap at one of the buttons to get started.`;
+      const text = `Thanks for adding The legendary Kíñgsléy bot 😎 in your group. Please tap at one of the legendary 😄 buttons to get started.`;
       const buttons = [
         {
           buttonId: "help",
@@ -53,7 +53,7 @@ export default class EventHandler {
       }
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "© Katsushima",
+        footerText: "© Kingsley",
         buttons: buttons,
         headerType: 1,
       };
